@@ -1,0 +1,21 @@
+
+
+/*  */
+
+.container-fluid {
+    background-color: #ccc;
+    width: 10px;
+    height: 5px;
+}
+
+h1 {
+    display: none;
+}
+
+.container-fluid > p {
+    display: none;
+}
+
+.col-lg-4 {
+    display: none;
+}

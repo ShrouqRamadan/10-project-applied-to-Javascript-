@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Text As File </title>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- my file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="main-div ">
+    <div class="cotant">
+    
+        <div  class="item rounded-3 p-3">
+            <div class="alert alert-danger text-center d-none">Enter something!</div>
+            <textarea class="rounded-2 " placeholder="Enter something to save"></textarea>
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <div class="mb-4"> 
+                    <label for="" class="mb-1" >File Name</label>
+                    <br>
+                    <input type="text" placeholder="Enter file name" id="file-name" >
+                </div>
+                <div class="mb-4"> 
+                    <label for="" class="mb-1" >Save as</label>
+                    <br>
+              
+        <select id="select-file">
+         <option value="text/plain">Text File (.txt)</option>
+         <option value="text/javascript">Js File (.js)</option>
+         <option value="text/html">HTML File (.html)</option>
+         <option value="image/svg+xml">SVG File (.svg)</option>
+         <option value="application/msword">Doc File (.doc)</option>
+         <option value="application/vnd.ms-powerpoint">PPT File (.ppt)</option>
+        
+        </select>
+                </div>
+               
+
+            </div>
+            <div class="d-grid gap-2">
+                <button class="btn btn-block btn-info" id="saveText">Save Text As File</button>
+            </div>
+           
+        </div>
+    </div>
+</div>
+    
+   
+
+
+
+
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS</title>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- my file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="">
+    <!-- nav -->
+    <nav class="  shadow-lg text-center">
+        <h1 class="">CRUDS Application</h1>
+        
+    </nav>
+    <!-- dark mode -->
+    <div class="dark-mode-btn rounded-pill  ms-auto m-4" id="darkmode">
+        <div class="circle mx-1"></div>
+    </div>
+    <section class="w-75  mx-auto">
+        <div class="container mt-5 ">
+            <div class="d-flex justify-content-between ">
+                <button class="btn btn-success  add-more-user"><i class="fa-solid fa-plus"></i> Add More User</button>
+                <div class="d-flex">
+                    
+                </div>
+            </div>
+            <!-- Add User -->
+<div class=" mt-4 add-user d-none ">
+    <h2>Add User</h2>
+
+    <div class="mb-4">
+        <div class="alert alert-danger mt-2 mx-auto w-25 d-none" id="alertAll"> </div>
+
+        <label for="">Name<span class="text-danger">*</span></label>
+    <input type="text" placeholder="Name" class="form-control" id="name" >
+    <div class="alert alert-danger mt-2 d-none" id="alertName"> </div>
+    </div>
+    <div class="mb-4">
+        <label for="">Country<span class="text-danger">*</span></label>
+        <input type="text" placeholder="Country" class="form-control" id="country">
+    <div class="alert alert-danger mt-2 d-none" id="alertCountry">Country is required</div>
+    </div>
+   <div class="mb-4">
+    <label for="">Salary<span class="text-danger">*</span></label>
+    <input type="number" placeholder="Salary" class="form-control mb-4" id="salary">
+    <div class="alert alert-danger mt-2 d-none" id="alertSalary">Salary is required</div>
+   </div>
+  <div class="mb-2">
+    <label for="">Email<span class="text-danger">*</span></label>
+    <input type="email" placeholder="Email" class="form-control " id="email">
+    <div class="alert alert-danger mt-2 d-none" id="alertEmail"> Email is required</div>
+  </div>
+    
+    <button class="btn btn-primary"  id="save"> Save </button>
+    <button class="btn btn-primary d-none" onclick=" changeData()" id="saveChange"> Save Change </button>
+    <button class="btn btn-primary Cancel-btn"> Cancel</button>
+</div>
+
+<!-- search input -->
+<div class=" my-4 col-lg-3 col-md-6   ms-auto">
+    <label for="">Search by name: </label>
+                <input type="search" placeholder="Type name to search" class="form-control" oninput="search(this.value)">
+</div>
+<!-- tabe -->
+<div class="my-4 div-table">
+    
+    <table class="table">
+        <thead>
+            <th>Name</th>
+            <th>Country</th>
+            <th>Salary</th>
+            <th>Email</th>
+            <th colspan="2">Actions</th>
+        </thead>
+        <tbody id="userdata">
+            
+          
+        </tbody>
+    </table>
+
+</div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

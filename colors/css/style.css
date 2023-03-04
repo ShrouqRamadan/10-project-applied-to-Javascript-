@@ -1,0 +1,26 @@
+body{
+    background-color: #E9EAFF;
+}
+.item-color{
+    height: 200px;
+    /* background-color:rgb(red, green, blue) ; */
+}
+.btn{
+    background-color: #917CB4;
+    position: fixed;
+    top: 90%;
+    left: 48%;
+    color: white;
+    font-size: 20px;
+   
+}
+.item{
+    transition: all 1s;
+}
+.item:hovere{
+  transform: scale(0.9,0.9); 
+}
+h1{
+    color: rgb(12, 99, 142);
+}
+
